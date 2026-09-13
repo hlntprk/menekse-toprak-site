@@ -6,7 +6,7 @@
 <title>Kitaplar — Menekşe Toprak</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --cream: #F2ECE0;
@@ -28,7 +28,7 @@
     background-color: var(--cream);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23grain)'/%3E%3C/svg%3E");
     color: var(--ink);
-    font-family: 'Source Serif 4', serif;
+    font-family: 'Raleway', serif;
     font-size: 18px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
@@ -46,14 +46,14 @@
   }
 
   h1, h2, h3, .display {
-    font-family: 'Fraunces', serif;
+    font-family: 'EB Garamond', serif;
     font-weight: 500;
     letter-spacing: -0.01em;
     margin: 0;
   }
 
   a { color: inherit; }
-  .nav-label, .lang-toggle, .meta, nav a, footer .cols { font-family: 'Work Sans', sans-serif; }
+  .nav-label, .lang-toggle, .meta, nav a, footer .cols { font-family: 'Raleway', sans-serif; }
 
   /* language visibility: show only the active language */
   [data-lang="de"] .lang-tr, [data-lang="de"] .lang-en { display: none; }
@@ -66,10 +66,10 @@
   header.site-header {
     padding: 28px 0 24px;
     position: sticky; top: 3px; z-index: 900;
-    background: rgba(221, 205, 190, 0.65);
+    background: rgba(107, 39, 55, 0.92);
     backdrop-filter: blur(10px) saturate(1.15);
     -webkit-backdrop-filter: blur(10px) saturate(1.15);
-    border-bottom: 1px solid rgba(107, 39, 55, 0.22);
+    border-bottom: 1px solid rgba(245, 185, 66, 0.35);
     box-shadow: 0 18px 34px rgba(38,34,32,0.15), 0 2px 6px rgba(38,34,32,0.08);
   }
 
@@ -79,8 +79,9 @@
   }
 
   .site-name {
-    font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 500; text-decoration: none;
+    font-family: 'EB Garamond', serif; font-size: 1.4rem; font-weight: 500; text-decoration: none;
     display: inline-block; transition: transform 0.15s ease;
+    color: var(--cream);
   }
   .site-name:hover { transform: scale(1.05); }
 
@@ -88,24 +89,24 @@
 
   nav.primary-nav a {
     display: inline-block;
-    text-decoration: none; font-size: 0.95rem; color: var(--ink-soft);
+    text-decoration: none; font-size: 0.95rem; color: #F5B942;
     border-bottom: 1px solid transparent; padding-bottom: 2px;
     transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
   }
-  nav.primary-nav a:hover, nav.primary-nav a:focus-visible { color: var(--ink); border-bottom-color: var(--bordeaux); transform: scale(1.05); }
+  nav.primary-nav a:hover, nav.primary-nav a:focus-visible { color: #FFD57A; border-bottom-color: #F5B942; transform: scale(1.05); }
 
   nav.primary-nav .nav-current {
-    display: inline-block; font-size: 0.95rem; color: var(--bordeaux);
-    border-bottom: 1px solid var(--bordeaux); padding-bottom: 2px;
+    display: inline-block; font-size: 0.95rem; color: #FFD57A;
+    border-bottom: 1px solid #FFD57A; padding-bottom: 2px;
   }
-  .lang-toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; font-size: 0.85rem; }
+  .lang-toggle { display: inline-flex; border: 1px solid rgba(245, 185, 66, 0.4); border-radius: 999px; overflow: hidden; font-size: 0.85rem; }
   .lang-toggle button {
     background: none; border: none; padding: 7px 14px; cursor: pointer;
-    color: var(--ink-soft); font-family: 'Work Sans', sans-serif; font-size: 0.82rem;
+    color: #F5B942; font-family: 'Raleway', sans-serif; font-size: 0.82rem;
     transition: transform 0.15s ease;
   }
   .lang-toggle button:hover { transform: scale(1.08); }
-  .lang-toggle button[aria-pressed="true"] { background: var(--bordeaux); color: var(--cream); }
+  .lang-toggle button[aria-pressed="true"] { background: #F5B942; color: var(--ink); }
   .lang-toggle button:focus-visible, nav.primary-nav a:focus-visible, a:focus-visible {
     outline: 2px solid var(--ochre); outline-offset: 2px;
   }
@@ -115,13 +116,13 @@
     gap: 56px; align-items: center;
   }
   .hero-copy { position: relative; }
-  .hero-copy .kicker { font-family: 'Work Sans', sans-serif; font-size: 0.9rem; color: var(--bordeaux); margin-bottom: 18px; }
+  .hero-copy .kicker { font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: var(--bordeaux); margin-bottom: 18px; }
   .hero-title { font-size: clamp(2.3rem, 4.2vw, 3.4rem); line-height: 1.12; }
-  .hero-lede { margin-top: 28px; max-width: 46ch; color: var(--ink-soft); }
+  .hero-lede { margin-top: 28px; color: var(--ink-soft); }
 
   .cta {
     display: inline-block; margin-top: 32px; padding: 13px 28px; background: var(--bordeaux);
-    color: var(--cream); text-decoration: none; font-family: 'Work Sans', sans-serif;
+    color: var(--cream); text-decoration: none; font-family: 'Raleway', sans-serif;
     font-size: 0.95rem; border-radius: 2px; transition: background 0.15s ease, transform 0.15s ease;
   }
   .cta:hover { background: #591f2e; transform: scale(1.05); }
@@ -161,7 +162,7 @@
   .flip-arrow {
     background: none; border: 1px solid var(--line); border-radius: 50%;
     width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
-    cursor: pointer; color: var(--ink-soft); font-family: 'Work Sans', sans-serif; font-size: 1.05rem;
+    cursor: pointer; color: var(--ink-soft); font-family: 'Raleway', sans-serif; font-size: 1.05rem;
     transition: transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
   }
   .flip-arrow:hover { transform: scale(1.08); border-color: var(--bordeaux); color: var(--bordeaux); }
@@ -219,7 +220,7 @@
     content: "* * *";
     position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%);
     background-color: var(--cream); padding: 0 16px;
-    color: var(--ink-soft); font-family: 'Work Sans', sans-serif; font-weight: 600;
+    color: var(--ink-soft); font-family: 'Raleway', sans-serif; font-weight: 600;
     font-size: 0.55rem; line-height: 1; letter-spacing: 0.06em; opacity: 0.85;
   }
   .block-head { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-bottom: 40px; flex-wrap: wrap; }
@@ -230,7 +231,7 @@
   }
   .see-all {
     display: inline-block;
-    font-family: 'Work Sans', sans-serif; font-size: 0.9rem; text-decoration: none; color: var(--bordeaux); white-space: nowrap;
+    font-family: 'Raleway', sans-serif; font-size: 0.9rem; text-decoration: none; color: var(--bordeaux); white-space: nowrap;
     transition: transform 0.15s ease;
   }
   .see-all:hover { transform: scale(1.05); }
@@ -242,7 +243,7 @@
   }
   .block-head .see-all:hover,
   .see-all--framed:hover { border-color: var(--bordeaux); }
-  p.lede { max-width: 62ch; color: var(--ink-soft); }
+  p.lede { color: var(--ink-soft); }
 
   #ueber p.lede {
     text-align: justify;
@@ -251,7 +252,7 @@
   }
 
   #ueber p.lede::first-letter {
-    font-family: 'Fraunces', serif; font-weight: 500; color: var(--bordeaux);
+    font-family: 'EB Garamond', serif; font-weight: 500; color: var(--bordeaux);
     float: left; font-size: 3.6rem; line-height: 0.82;
     padding-right: 10px; padding-top: 5px;
   }
@@ -279,10 +280,10 @@
     box-shadow: inset 3px 0 5px -2px rgba(38,34,32,0.32), 0 14px 22px rgba(38,34,32,0.16);
   }
   .row-title-wrap { display: flex; align-items: center; gap: 8px; }
-  .row-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 500; }
-  .row-meta { font-family: 'Work Sans', sans-serif; font-size: 0.85rem; color: var(--ink-soft); margin-top: 4px; }
-  .row-desc { margin-top: 8px; color: var(--ink-soft); max-width: 52ch; font-size: 0.98rem; }
-  .row-date { font-family: 'Work Sans', sans-serif; font-size: 0.85rem; color: var(--bordeaux); white-space: nowrap; text-align: right; }
+  .row-title { font-family: 'EB Garamond', serif; font-size: 1.2rem; font-weight: 500; }
+  .row-meta { font-family: 'Raleway', sans-serif; font-size: 0.85rem; color: var(--ink-soft); margin-top: 4px; }
+  .row-desc { margin-top: 8px; color: var(--ink-soft); font-size: 0.98rem; }
+  .row-date { font-family: 'Raleway', sans-serif; font-size: 0.85rem; color: var(--bordeaux); white-space: nowrap; text-align: right; }
 
   .row-event { grid-template-columns: 1fr auto; }
 
@@ -293,7 +294,7 @@
   }
 
   .contact-block { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
-  .contact-links { display: flex; gap: 24px; font-family: 'Work Sans', sans-serif; font-size: 0.95rem; }
+  .contact-links { display: flex; gap: 24px; font-family: 'Raleway', sans-serif; font-size: 0.95rem; }
   .contact-links a {
     display: inline-block;
     text-decoration: none; border-bottom: 1px solid var(--bordeaux);
@@ -307,11 +308,11 @@
   .pull-quote { text-align: center; }
   .pull-quote .marginalia { justify-content: center; margin-bottom: 18px; }
   .pull-quote blockquote {
-    margin: 0 auto; max-width: 34ch; font-family: 'Fraunces', serif; font-style: italic;
+    margin: 0 auto; max-width: 34ch; font-family: 'EB Garamond', serif; font-style: italic;
     font-weight: 400; font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.38; color: var(--ink);
   }
   .quote-attribution {
-    margin-top: 22px; font-family: 'Work Sans', sans-serif; font-size: 0.85rem; color: var(--ink-soft);
+    margin-top: 22px; font-family: 'Raleway', sans-serif; font-size: 0.85rem; color: var(--ink-soft);
   }
   .pull-quote .placeholder-note { margin-top: 16px; }
 
@@ -321,7 +322,7 @@
   }
 
   .placeholder-note {
-    font-family: 'Work Sans', sans-serif; font-size: 0.78rem; color: var(--ink-soft);
+    font-family: 'Raleway', sans-serif; font-size: 0.78rem; color: var(--ink-soft);
     background: var(--cream-deep); border: 1px dashed var(--line); padding: 3px 8px; border-radius: 3px;
     display: inline-block; margin-top: 6px;
   }
@@ -397,7 +398,7 @@
 /* ===== Book detail pages ===== */
 .back-link {
   display: inline-flex; align-items: center; gap: 6px;
-  font-family: 'Work Sans', sans-serif; font-size: 0.9rem; color: var(--ink-soft);
+  font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: var(--ink-soft);
   text-decoration: none; margin: 40px 0 8px; transition: transform 0.15s ease, color 0.15s ease;
 }
 .back-link:hover { color: var(--bordeaux); transform: translateX(-3px); }
@@ -418,8 +419,8 @@
 }
 
 .book-detail-title { font-size: clamp(2rem, 4vw, 2.8rem); margin-top: 4px; }
-.book-detail-meta { font-family: 'Work Sans', sans-serif; font-size: 0.9rem; color: var(--ink-soft); margin-top: 10px; }
-.book-detail-synopsis { margin-top: 24px; max-width: 58ch; color: var(--ink-soft); }
+.book-detail-meta { font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: var(--ink-soft); margin-top: 10px; }
+.book-detail-synopsis { margin-top: 24px; color: var(--ink-soft); text-align: justify; hyphens: auto; }
 
 .detail-block-title {
   display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px;
@@ -431,9 +432,9 @@
 .press-item .press-source {
   font-family: 'Space Mono', monospace; font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.02em;
 }
-.press-item p { margin-top: 8px; color: var(--ink-soft); max-width: 62ch; }
+.press-item p { margin-top: 8px; color: var(--ink-soft); text-align: justify; hyphens: auto; }
 .press-item a.press-link {
-  display: inline-block; margin-top: 8px; font-family: 'Work Sans', sans-serif; font-size: 0.85rem;
+  display: inline-block; margin-top: 8px; font-family: 'Raleway', sans-serif; font-size: 0.85rem;
   color: var(--bordeaux); text-decoration: none; border-bottom: 1px solid var(--bordeaux);
   transition: transform 0.15s ease;
 }
@@ -441,7 +442,7 @@
 
 .translation-list { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 8px; }
 .translation-list a {
-  font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: var(--bordeaux);
+  font-family: 'Raleway', sans-serif; font-size: 0.95rem; color: var(--bordeaux);
   text-decoration: none; border-bottom: 1px solid var(--bordeaux); transition: transform 0.15s ease;
   display: inline-block;
 }
@@ -465,9 +466,9 @@
   <div class="shell header-row">
     <a href="index.html" class="site-name">Menekşe Toprak</a>
     <nav class="primary-nav" aria-label="Hauptnavigation">
+      <a href="index.html"><span class="lang-de">Startseite</span><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Main Page</span></a>
       <span class="nav-current" aria-current="page"><span class="lang-de">Bücher</span><span class="lang-tr">Kitaplar</span><span class="lang-en">Books</span></span>
-      <a href="index.html#ueber"><span class="lang-de">Über mich</span><span class="lang-tr">Hakkımda</span><span class="lang-en">About</span></a>
-      <a href="index.html#termine"><span class="lang-de">Termine</span><span class="lang-tr">Etkinlikler</span><span class="lang-en">Events</span></a>
+      <a href="index.html#diger"><span class="lang-de">Weitere Arbeiten</span><span class="lang-tr">Diğer Çalışmalar</span><span class="lang-en">Other Works</span></a>
       <a href="index.html#kontakt"><span class="lang-de">Kontakt</span><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
     </nav>
     <div class="lang-toggle" role="group" aria-label="Sprache wählen / Dil seçin / Choose language">
